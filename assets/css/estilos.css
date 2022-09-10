@@ -1,0 +1,292 @@
+/*  -------------- cabecalho -----------------        */
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 2rem 0 7rem;
+    background: radial-gradient(circle, white 85%, #555 );
+    backdrop-filter: drop-shadow(1px 1px 3px black);
+
+    position: relative;
+}
+
+.img__logo{
+    width: 200px;
+}
+
+.cabecalho__form-pesquisa{
+    width: 40%;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.pesquisa__campo{
+    height: 30px;
+    width: 100%;
+    border-radius: 50px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .2rem .5rem;
+}
+
+
+.pesquisa__botao-img{
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(calc( 50% - 30px));
+}
+
+.pesquisa__botao-img:hover{
+    cursor:pointer;
+    backdrop-filter: drop-shadow(3px 3px 1px black);
+}
+
+.cabecalho__botao-login{
+    position: absolute;
+    right: 0;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 6rem;
+    padding: .3rem 0;
+    width: 150px;
+
+
+    color: white;
+    background-color: rgb(31, 92, 223);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+/* ----------------- Chamada ------------------ */
+
+.chamada{
+    background: url(../imgs/bazarChamada.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 3rem;
+}
+
+.chamada__container{
+    padding: 2rem;
+    width: 45%;
+    background: rgba(0, 0, 0, 0.698);
+
+}
+
+.chamada__textos-cor{
+    color: white;
+}
+
+.chamada__titulo-chamada{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.chamada__descontos{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* --------------------- Produtos ---------------- */
+
+.produtos{
+    padding: 3rem 0;
+}
+
+.produtos__items{
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.produtos__titulos{
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+
+    font-size: 1.7rem;
+ }
+
+ .produtos__ver-mais{
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+
+    font-size: 1.7rem;
+ }
+
+.produto__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(247, 247, 247);
+    width: calc( 20% - 1rem);
+    margin: 3rem 0 0 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.produto__item:nth-child(5n +1){
+    margin-left: 0;
+}
+
+.produto__item:hover{
+    transform: scale(105%);
+    filter:drop-shadow(2px 2px 5px black);
+}
+
+.produto__img{
+    margin-top: .5rem;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.produtos__textos{
+    margin: .5rem 0 0 3rem;
+    text-align: left;
+    width: 100%;
+}
+
+.produto__nome{
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+}
+
+.produto__preco{
+    font-weight: 800;
+    color: rgb(46, 46, 46);
+}
+
+.produto__preco::before{
+    content: "R$  ";
+}
+
+.produto__ver{
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.produto__ver:hover{
+    text-decoration: underline;
+}
+
+
+/* --------------- Rodapé --------------- */
+
+.rodape{
+    background-color: #ddd;
+}
+
+.rodape__conteudos{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+}
+.rodape__links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+.rodape__link{
+    color: black;
+    font-size: 1.7rem;
+    margin-top: 0.4rem;
+    text-decoration: none;
+}
+
+.rodape__link:hover{
+    text-decoration: underline;
+}
+
+
+/* -------------- rodapé formulário --------------- */
+
+
+.rodape__contato{
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.contato-titulo{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rodape__marcodores{
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.rodape__inputs{
+    width:100%;
+    resize: none;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    line-height: 1.8rem;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.rodape__inputs{
+    border: none;
+
+}
+
+.rodape__botao{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: rgb(31, 92, 223) solid;
+
+    font-size: 1rem;
+    color: rgb(31, 92, 223) ;
+}
+
+/* -------------------- rodapé direitos ---------- */
+
+.rodape__direitos{
+    margin-top: 5rem;
+    padding: 3rem;
+    text-align: center;
+    background: radial-gradient(circle,  rgb(31, 92, 223) 60%,#333);
+}
+
+.rodape__direitos-textos{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
