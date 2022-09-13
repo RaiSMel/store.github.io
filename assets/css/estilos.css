@@ -116,6 +116,21 @@
     padding: 3rem 0;
 }
 
+.novoProduto{
+    margin-left: 75%;
+    width: 150px;
+}
+
+.adicionarItens{
+    width: 150px;
+    padding: .4rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
 .produtos__items{
     position: relative;
     
@@ -176,7 +191,7 @@
 }
 
 .produtos__textos{
-    margin: .5rem 0 0 3rem;
+    margin: .5rem 0 0 2rem;
     text-align: left;
     width: 100%;
 }
@@ -306,4 +321,70 @@
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+/* -------------------- Login formulário --------------------- */
+
+.form__login{
+    padding: 5rem 0;
+    width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.login-titulo{
+    margin-bottom: 1rem;
+    
+}
+
+.login__marcodores{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+}
+
+.login__inputs{
+    padding: .5rem;
+    width: 300px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ------------- Cadastrar Produto ------------- */
+
+.cadastrarProduto{
+    margin: 4rem auto;
+
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+
+.novo-produto__marcadores{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+}
+
+.titulo-cadastrar{
+    margin-bottom: 1rem;
+}
+
+.novo-produto__inputs{
+    height: 30px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.botao__novo-produto{
+    height: 30px;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: white;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
 }

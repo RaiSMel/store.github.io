@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Bazar ai</title>
+    <link rel="stylesheet" href="./assets/css/limpar.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1><a href="index.html" class="cabecalho__link-home"><img src="./assets/imgs/logoBazar.png"
+                alt="bazar ai com paisagem de fundo logo" class="img__logo"></a></h1>
+        <form action="" class="cabecalho__form-pesquisa">
+            <input type="text" class="pesquisa__campo">
+            <img src="./assets/imgs/pesquisa.png" class="pesquisa__botao-img" type>
+        </form>
+        <a href="login.html" class="cabecalho__botao-login">Entrar</a>
+    </header>
+    <main class="principal">
+        <form class="cadastrarProduto">
+            <h2 class="titulo-cadastrar">Novo Produto</h2>
+            <label class="novo-produto__marcadores" for="nome">nome</label><input class="novo-produto__inputs" name="nome" id='nome' type="text">
+            <label class="novo-produto__marcadores" for="tipos">tipo</label>
+            <select class="novo-produto__inputs" name="tipos" id="tipos">
+                <option value="calcas">Calça</option>
+                <option value="camisas">camisas</option>
+                <option value="tenis">tenis</option>
+            </select>
+            <label class="novo-produto__marcadores" for="preco">preço</label><input class="novo-produto__inputs" name="preco" id="preco" type="text">
+            <label class="novo-produto__marcadores" for="descricao">descrição</label><input class="novo-produto__inputs" type="text" id="descricao" name="descricao">
+            <label class="novo-produto__marcadores" for="url">url</label><input class="novo-produto__inputs" id="url" name="url" type="text">
+            <button class="botao__novo-produto" type="submit">Criar Produto</button>
+        </form>
+    </main>
+        <footer class="rodape">
+            <section class="rodape__conteudos">
+                <img src="./assets/imgs/logoBazar.png"
+                alt="bazar ai com paisagem de fundo logo" class="img__logo">
+                <div class="rodape__links">
+                    <a href="#" class="rodape__link">Quem somos nos</a>
+                    <a href="#" class="rodape__link">Política de privacidade</a>
+                    <a href="#" class="rodape__link">Programa fidelidade</a>
+                    <a href="#" class="rodape__link">Nossas lojas</a>
+                    <a href="#" class="rodape__link">Quero ser franqueado</a>
+                    <a href="#" class="rodape__link">Anuncie aqui</a>
+                </div>
+                <form method="post" action="https://api.staticforms.xyz/submit" class="rodape__contato">
+                    <h3 class="contato-titulo">Fale conosco</h3>
+                    <input type="hidden" name="accessKey" value="94fa6e0f-8504-4009-8b8c-081ca55042ac"> 
+                    <label for="name" class="rodape__marcodores">Nome:</label>
+                    <input name="name" type="text" class="rodape__inputs" pattern="[A-Z][a-z]" title="Só é aceito letras" placeholder="Nome" required>
+                    <label for="" class="rodape__marcodores">Mensagem:</label>
+                    <textarea name="message" type="text" class="rodape__inputs" rows="5" placeholder="Mensagem" required></textarea>
+                    <input type="hidden" name="redirectTo" value="https://raismel.github.io/bazarai.github.io/">
+                    <button name="message" class="rodape__botao" type="submit">Enviar Mensagem</button>
+                </form>
+            </section>
+        <section class="rodape__direitos">
+                     <p class="rodape__direitos-textos"> Criado pelo desenvolvedor Rai da
+                         S. Mello 2022</p>
+            </section>
+        </footer>
+    
+    <script type="module" src="./assets/js/criaProdutos.js"></script>
+    
+    </body>
+    
+    </html>

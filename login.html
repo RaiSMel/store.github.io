@@ -23,6 +23,16 @@
     </header>
     <main class="principal">
         
+        <form class="form__login">
+            <h2 class="login-titulo">Login</h2>
+            
+            <label for="email" class="login__marcodores" >Email:</label>
+            <input name="email" type="text" class="login__inputs" data-email pattern="/\S+@\S+\.\S+/" title="exemplo@email.com" placeholder="Nome" required>
+            <label for="senha" class="login__marcodores">Senha</label>
+            <input name="senha" type="password" class="login__inputs" data-senha placeholder="Senha" required>
+            
+            <button name="message" class="rodape__botao" type="submit" data-botao>Login</button>
+        </form>
     
     </main>
 
@@ -55,7 +65,7 @@
         </section>
     </footer>
 
-<script type="module" src="./assets/js/main.js"></script>
+<script type="module" src="./assets/js/login.js"></script>
 
 </body>
 
