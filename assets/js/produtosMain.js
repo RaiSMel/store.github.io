@@ -4,7 +4,6 @@ import { redirecionarCriarNovoItem, validarSessao } from "./validandoSession.js"
 
 verificarProdutosExistentes();
 validarSessao();
-redirecionarCriarNovoItem();
 
 const imprimirTipos = (produtos) =>
 {

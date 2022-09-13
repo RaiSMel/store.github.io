@@ -9,12 +9,14 @@ export const validarSessao = () => {
         novoItem.innerHTML = 'Novo Produto';
 
         produtosPag.appendChild(novoItem);
+
+        redirecionarCriarNovoItem()
     }else{
         sessionStorage.clear();
     }
 }
 
-export const redirecionarCriarNovoItem = () =>{
+const redirecionarCriarNovoItem = () =>{
     const botaoNovoItem = document.querySelector('.adicionarItens')  
     
     botaoNovoItem.addEventListener('click', (evento) => {
