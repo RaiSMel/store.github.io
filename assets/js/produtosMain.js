@@ -1,6 +1,6 @@
 
 import { criarProduto, carregarProduto, itensProdutos, verificarProdutosExistentes } from "./carregaProdutos.js"
-import { redirecionarCriarNovoItem, validarSessao } from "./validandoSession.js";
+import { validarSessao } from "./validandoSession.js";
 
 verificarProdutosExistentes();
 validarSessao();

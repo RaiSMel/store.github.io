@@ -1,0 +1,92 @@
+/*  -------------- cabecalho -----------------        */
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 2rem 0 4rem;
+    background: radial-gradient(circle, white 85%, #555 );
+    backdrop-filter: drop-shadow(1px 1px 3px black);
+
+    position: relative;
+}
+
+.img__logo{
+    width: 190px;
+}
+
+.cabecalho__form-pesquisa{
+    width: 200px;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.pesquisa__campo{
+    height: 30px;
+    width: 100%;
+    border-radius: 50px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .2rem .5rem;
+}
+
+
+.pesquisa__botao-img{
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(calc( 50% - 30px));
+}
+
+.pesquisa__botao-img:hover{
+    cursor:pointer;
+    backdrop-filter: drop-shadow(3px 3px 1px black);
+}
+
+.cabecalho__botao-login{
+    position: absolute;
+    right: 0;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 6rem;
+    padding: .3rem 0;
+    width: 150px;
+
+
+    color: white;
+    background-color: rgb(31, 92, 223);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px ) {
+    
+    
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+        background: radial-gradient(circle, white 85%, #555 );
+        backdrop-filter: drop-shadow(1px 1px 3px black);
+        
+    }
+    
+    .cabecalho__form-pesquisa{
+        margin-left: 0;    
+        width: 70%;
+    }
+    
+    .cabecalho__botao-login{
+        position: initial;
+        display: block;
+        margin: 1rem 0;
+    }
+
+}

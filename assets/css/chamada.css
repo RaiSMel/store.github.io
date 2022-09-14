@@ -1,0 +1,54 @@
+
+
+
+/* ----------------- Chamada ------------------ */
+
+.chamada{
+    background: url(../imgs/bazarChamada.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chamada__container{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.698);
+
+}
+
+.chamada__textos-cor{
+    color: white;
+}
+
+.chamada__titulo-chamada{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.chamada__descontos{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.chamada__ver-produtos{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+}
+
+
+@media screen and (max-width: 767px){
+    .chamada__container{
+        width: 80%;
+    }
+    .chamada__titulo-chamada{
+        font-size: 2rem;
+    }    
+    .chamada__descontos{
+        font-size: 1.4rem;
+    }
+}
