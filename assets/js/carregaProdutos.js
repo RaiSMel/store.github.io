@@ -8,7 +8,7 @@ export const criarProduto = (nome, preco, url, id, tipo) => {
         <img src="${url}" class="produto__img">
         <p class="produto__nome produtos__textos">${nome}</p>
         <p class="produto__preco produtos__textos">${preco}</p>
-        <a class="produto__ver produtos__textos" href="https://www.google.com.br/${tipo}/${id}">verificar produto</a>
+        <a class="produto__ver produtos__textos" href="produto.html#${tipo}${id}">verificar produto</a>
     `;
 
     produtoItem.innerHTML = produto;
