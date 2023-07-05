@@ -2,7 +2,12 @@
 
 <p>O projeto consiste em criar uma loja online, sendo possível adicionar produtos a loja</p>
 
-<p> Para realizar o login é necessário fazer o login através do </p>
+<p> Para cadastrar novos produtos é preciso realizar o login com as seguintes informações 
+<br>
+Login: admin@admin.com
+<br>
+Senha: 1234
+</p>
 
 ## O projeto foi criado com a IDE
 
