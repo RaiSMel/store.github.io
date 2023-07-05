@@ -1,6 +1,8 @@
 # Projeto da Loja Alura-ONE
 
-O projeto consiste em criar uma loja online, sendo possível adicionar produtos a loja
+<p>O projeto consiste em criar uma loja online, sendo possível adicionar produtos a loja</p>
+
+<p> Para realizar o login é necessário fazer o login através do </p>
 
 ## O projeto foi criado com a IDE
 
