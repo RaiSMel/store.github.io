@@ -12,11 +12,10 @@ const PegarItem = () => {
 }
 
 const CriarProduto = async () => {
-
-    let produto = await PegarItem()
+    let produto = PegarItem()
+    
     let principal = document.querySelector(".principal")
-    let produtoSelecionado = itens[produto[0]][produto[1] - 1]
-
+    let produtoSelecionado = JSON.parse(localStorage.getItem('produtos'))[produto[0]][produto[1] - 1]
     principal.innerHTML = `
     <section class="produto-selecionado">
 
@@ -37,7 +36,7 @@ const CriarProduto = async () => {
     let outrosProdutos = itens[produto[0]]
     let tamanho = 0;
     outrosProdutos.forEach(produto => {
-        if((produtoSelecionado != produto) && (tamanho < 5)){
+        if((produtoSelecionado != produto) && (tamanho < 4)){
             
             let item = document.createElement('div')
             item.classList.add('produto')
@@ -50,6 +49,7 @@ const CriarProduto = async () => {
             <a class="direcionar" href="produto.html#${produto.tipo}${produto.id}">Verificar produto</a>` 
             
             produtos.appendChild(item)
+            tamanho++
         }
         
     })

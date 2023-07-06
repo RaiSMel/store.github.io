@@ -1,6 +1,11 @@
+import { itens } from "./dados.js";
+
+
+
 const getLocalStorage = () => JSON.parse(localStorage.getItem('produtos'))
 const setLocalStorage = (produtos) => localStorage.setItem('produtos', JSON.stringify(produtos)) 
 const botaoNovoItem = document.querySelector('.botao__novo-produto');
+
 
 botaoNovoItem.addEventListener('click', (evento) => {
 
@@ -20,7 +25,9 @@ botaoNovoItem.addEventListener('click', (evento) => {
 
 export const novoProduto = (tipo, nome, preco, descricao, url) => {
     const produtos = getLocalStorage();
+    
     const produto = {
+            'id': itens[tipo].length + 1,
             'tipo': tipo,
             'nome': nome,
             'preco': preco,
