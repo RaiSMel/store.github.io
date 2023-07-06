@@ -47,7 +47,7 @@ export const itens = {
                 {
                         id: 1,
                         'tipo': 'calcas',
-                        'nome': 'Calça Jeans Comun',
+                        'nome': 'Calça Jeans Comum',
                         'preco': '50',
                         'descrição': 'Camisa Fairy Tail com personagem principal, técido seda sintetico',
                         'url': './assets/imgs/calcaJeansComun.jpg'

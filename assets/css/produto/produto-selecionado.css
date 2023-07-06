@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+.produto-selecionado {
+    width: 80%;
+    margin: 60px auto;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    background: #fff;
+}
+
+.produto-selecionado .conteudo {
+    height: 100%;
+}
+
+.produto-selecionado .imagem {
+    height: 240px;
+}
+
+.produto-selecionado .conteudo .nome {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.produto-selecionado .conteudo .avaliacao {
+    color: rgb(223, 223, 0);
+    margin-top: 1rem;
+}
+
+.produto-selecionado .conteudo .descricao {
+    color: #333;
+    margin-top: 1rem;
+}
+
+.produto-selecionado .conteudo .preco {
+    color: #1a1;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    margin-top: 1rem;
+}
+
+.produto-selecionado .conteudo .preco::before {
+    content: "R$ ";
+}
+
+.produto-selecionado .conteudo .comprar {
+    background: #1a1;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    border: #000 1px solid;
+    margin-top: 1rem;
+}
+
+.produto-selecionado .conteudo .comprar:hover {
+    background-color: white;
+    border: 1px solid #1a1;
+    color: #1a1;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.produtos .produto {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(25% - 55px);
+}
+
+.produto .imagem {
+    width: 90%;
+    max-width: 250px;
+    height: 250px;
+}
+
+.produto .nome {
+    margin-top: 1rem;
+}
+
+.produto .preco {
+    color: #1a1;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    margin-top: 1rem;
+}
+
+.produto .preco::before {
+    content: "R$ ";
+}
+
+.produto .avaliacao {
+    color: rgb(223, 223, 0);
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .produto-selecionado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .produtos {
+        gap: 1rem;
+    }
+
+    .produtos .produto {
+        width: calc(50% - 2.5rem);
+    }
+}
