@@ -23,12 +23,13 @@ body {
 
 .produto-selecionado .editar{
     color: #0c97cf;
+    display: none;
     font-style: normal;
     text-decoration: none;
     font-size: 1.4rem;
     position: absolute;
-    top: 5px;
     right: 10px;
+    top: 5px;
     transition: .3s;
 }
 

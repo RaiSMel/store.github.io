@@ -7,6 +7,8 @@ verificarProdutosExistentes()
 const CriarProduto = () => {
     let produto = PegarItem()
 
+    let sessao = sessionStorage.getItem('login');
+
     let principal = document.querySelector(".principal")
     let produtoSelecionado = JSON.parse(localStorage.getItem('produtos'))[produto[0]][produto[1] - 1]
     principal.innerHTML = `
@@ -28,6 +30,7 @@ const CriarProduto = () => {
 
     let outrosProdutos = getLocalStorage()[produto[0]]
     let tamanho = 0;
+
     outrosProdutos.forEach(produto => {
         if ((produtoSelecionado['id'] != produto['id']) && (tamanho < 4)) {
 
@@ -45,8 +48,8 @@ const CriarProduto = () => {
             tamanho++
         }
 
-
     })
+
     principal.appendChild(produtos)
     let links = document.querySelectorAll(".direcionar")
     links.forEach(link => {
@@ -55,7 +58,9 @@ const CriarProduto = () => {
         })
     })
 
-
+    if(sessao != null){
+        document.querySelector('.produto-selecionado .editar').style.display = "inline-block";
+    }
 }
 
 

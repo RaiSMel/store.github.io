@@ -5,6 +5,7 @@ const botoesConfirmar = document.querySelectorAll('.confirmar .botao');
 const confirmar = document.querySelector('.confirmar');
 const divProdutos = document.querySelector('.confirmar .produtos');
 
+
 let categoriaId = PegarItem();
 let produtoSelecionado = getLocalStorage()[categoriaId[0]][categoriaId[1]-1];
 
