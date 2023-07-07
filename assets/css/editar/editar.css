@@ -1,0 +1,155 @@
+.principal {
+    width: 80%;
+    padding: 10%;
+    background-color: #777;
+}
+
+.formulario-editar {
+    display: flex;
+    flex-flow: column wrap;
+    background: #fff;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 2px #222;
+}
+
+.formulario-editar .identificador {
+    margin-left: 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.formulario-editar .entradas {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #777;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 70%;
+
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.botao {
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+.botao.editar {
+    background: #1f5cdf;
+    border: none;
+    color: #fff;
+}
+
+.botao.excluir {
+    background: #f80203;
+    border: none;
+    color: #fff;
+}
+
+.botao.cancelar {
+    background: #777;
+    border: none;
+    color: #fff;
+}
+
+.botao:hover:disabled {
+    transform: none;
+}
+
+.botao:disabled {
+    filter: grayscale(0.7);
+}
+
+.confirmar {
+    align-items: center;
+    background: #000000cc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 40px 10px;
+    height: 90vh;
+    justify-content: center;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(calc(50% - 70vw), calc(50% - 90vh));
+    width: 70vw;
+    z-index: 4;
+}
+
+.confirmar .produtos {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.confirmar .produto {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+.confirmar .imagem {
+    width: 150px;
+}
+
+.confirmar .conteudo {
+    margin: 0 auto;
+    font-size: .7rem;
+}
+
+.confirmar .avaliacao{
+    color: rgb(218, 218, 2);
+}
+
+.confirmar .preco {
+    color: green;
+    font-weight: bold;
+}
+
+.confirmar .descricao{
+    width: 150px;
+}
+
+.confirmar .preco::before {
+    content: 'R$ ';
+}
+
+.confirmar .excluir {
+    display: none;
+}
+
+.confirmar .editar {
+    display: none;
+
+}
+
+@media screen and (max-width:600px) {
+    .confirmar{
+        width: 100vw;
+        left: 0;
+        top: calc( 50% - 45vh );
+        transform: none;
+    }
+}

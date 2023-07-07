@@ -5,7 +5,7 @@
 }
 
 .novoProduto{
-    margin-left: 75%;
+    margin-left: calc(90vw - 150px);
     width: 150px;
 }
 

@@ -1,9 +1,8 @@
 import { itens } from "./dados.js";
+import { getLocalStorage, setLocalStorage } from "./PegarDados.js";
 
 
 
-const getLocalStorage = () => JSON.parse(localStorage.getItem('produtos'))
-const setLocalStorage = (produtos) => localStorage.setItem('produtos', JSON.stringify(produtos)) 
 const botaoNovoItem = document.querySelector('.botao__novo-produto');
 
 
@@ -24,14 +23,14 @@ botaoNovoItem.addEventListener('click', (evento) => {
 })
 
 export const novoProduto = (tipo, nome, preco, descricao, url) => {
-    const produtos = getLocalStorage();
+    let produtos = getLocalStorage();
     
-    const produto = {
+    let produto = {
             'id': itens[tipo].length + 1,
             'tipo': tipo,
             'nome': nome,
             'preco': preco,
-            'descrição': descricao, 
+            'descricao': descricao, 
             'url': url
     }
 

@@ -5,7 +5,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 2rem 0 4rem;
+    padding: 0 1rem 0 1rem;
     background: radial-gradient(circle, white 85%, #555 );
     backdrop-filter: drop-shadow(1px 1px 3px black);
 
@@ -13,7 +13,7 @@
 }
 
 .img__logo{
-    width: 190px;
+    width: 150px;
 }
 
 .cabecalho__form-pesquisa{
@@ -50,10 +50,9 @@
 .cabecalho__botao-login{
     position: absolute;
     right: 0;
-
     border: 1px solid black;
     border-radius: 5px;
-    margin-right: 6rem;
+    margin-right: 2rem;
     padding: .3rem 0;
     width: 150px;
 
